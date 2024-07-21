@@ -1,0 +1,1485 @@
+dbug: 19.07.2024 02:55:09.749 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.7 initialized 'TrainingContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+dbug: 19.07.2024 02:55:09.834 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'TrainingContext' generated a temporary value for the property 'User.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19.07.2024 02:55:09.911 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19.07.2024 02:55:09.913 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'TrainingContext' generated a temporary value for the property 'User.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19.07.2024 02:55:09.922 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19.07.2024 02:55:09.925 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'TrainingContext'.
+dbug: 19.07.2024 02:55:09.927 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'TrainingContext'.
+dbug: 19.07.2024 02:55:09.938 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'TrainingContext'.
+dbug: 19.07.2024 02:55:10.042 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 2 update commands as a batch.
+dbug: 19.07.2024 02:55:10.142 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 19.07.2024 02:55:10.383 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (241ms).
+dbug: 19.07.2024 02:55:10.385 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 19.07.2024 02:55:11.262 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 19.07.2024 02:55:11.296 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: 19.07.2024 02:55:11.308 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Began transaction with isolation level 'ReadCommitted'.
+dbug: 19.07.2024 02:55:11.313 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 19.07.2024 02:55:11.332 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (14ms).
+dbug: 19.07.2024 02:55:11.364 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (51ms).
+dbug: 19.07.2024 02:55:11.373 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?' (DbType = Int32), @p3='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "Name")
+      VALUES (@p0, @p1)
+      RETURNING "ID";
+      INSERT INTO "User" ("Age", "Name")
+      VALUES (@p2, @p3)
+      RETURNING "ID";
+info: 19.07.2024 02:55:11.601 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (211ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?' (DbType = Int32), @p3='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "Name")
+      VALUES (@p0, @p1)
+      RETURNING "ID";
+      INSERT INTO "User" ("Age", "Name")
+      VALUES (@p2, @p3)
+      RETURNING "ID";
+dbug: 19.07.2024 02:55:11.627 CoreEventId.ForeignKeyChangeDetected[10803] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The foreign key property 'User.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 19.07.2024 02:55:11.633 CoreEventId.ForeignKeyChangeDetected[10803] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The foreign key property 'User.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 19.07.2024 02:55:11.673 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 19.07.2024 02:55:11.679 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 75ms reading results.
+dbug: 19.07.2024 02:55:11.682 RelationalEventId.TransactionCommitting[20210] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Committing transaction.
+dbug: 19.07.2024 02:55:11.708 RelationalEventId.TransactionCommitted[20202] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Committed transaction.
+dbug: 19.07.2024 02:55:11.710 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 19.07.2024 02:55:11.713 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (3ms).
+dbug: 19.07.2024 02:55:11.714 RelationalEventId.TransactionDisposed[20204] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Disposing transaction.
+dbug: 19.07.2024 02:55:11.721 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'User' tracked by 'TrainingContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19.07.2024 02:55:11.721 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'User' tracked by 'TrainingContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19.07.2024 02:55:11.722 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'TrainingContext' with 2 entities written to the database.
+dbug: 19.07.2024 02:55:11.843 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<User>()'
+dbug: 19.07.2024 02:55:12.495 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<User>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Age (int) Required ValueGenerated.OnAdd, 1], [Property: User.Name (string), 2] }
+              SELECT u.ID, u.Age, u.Name
+              FROM User AS u), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+          ConsoleApp1.TrainingContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 19.07.2024 02:55:12.539 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 19.07.2024 02:55:12.539 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 19.07.2024 02:55:12.539 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 19.07.2024 02:55:12.539 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 19.07.2024 02:55:12.539 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 19.07.2024 02:55:12.539 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."Name"
+      FROM "User" AS u
+info: 19.07.2024 02:55:12.561 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."Name"
+      FROM "User" AS u
+dbug: 19.07.2024 02:55:12.594 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19.07.2024 02:55:12.594 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19.07.2024 02:55:12.595 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19.07.2024 02:55:12.595 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 19.07.2024 02:55:12.596 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 34ms reading results.
+dbug: 19.07.2024 02:55:12.596 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 19.07.2024 02:55:12.596 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (0ms).
+dbug: 19.07.2024 02:55:12.599 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'TrainingContext' disposed.
+dbug: 19.07.2024 02:55:12.601 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 19.07.2024 02:55:12.602 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database 'Training' on server 'tcp://localhost:5432' (1ms).
+dbug: 20.07.2024 14:34:07.413 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.7 initialized 'TrainingContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+dbug: 20.07.2024 14:34:07.487 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<User>()'
+dbug: 20.07.2024 14:34:08.343 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<User>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Age (int) Required ValueGenerated.OnAdd, 1], [Property: User.Name (string), 2] }
+              SELECT u.ID, u.Age, u.Name
+              FROM User AS u), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+          ConsoleApp1.TrainingContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 20.07.2024 14:34:08.413 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 20.07.2024 14:34:09.171 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (782ms).
+dbug: 20.07.2024 14:34:09.203 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 14:34:10.777 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 14:34:10.814 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20.07.2024 14:34:10.873 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (58ms).
+dbug: 20.07.2024 14:34:10.874 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (61ms).
+dbug: 20.07.2024 14:34:10.881 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."Name"
+      FROM "User" AS u
+info: 20.07.2024 14:34:10.992 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (88ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."Name"
+      FROM "User" AS u
+dbug: 20.07.2024 14:34:11.184 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 14:34:11.222 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 14:34:11.222 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 14:34:11.222 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 14:34:11.222 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 14:34:11.225 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 14:34:11.231 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 236ms reading results.
+dbug: 20.07.2024 14:34:11.234 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 14:34:11.260 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (25ms).
+dbug: 20.07.2024 14:34:11.295 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'TrainingContext' disposed.
+dbug: 20.07.2024 14:34:11.334 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 14:34:11.336 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database 'Training' on server 'tcp://localhost:5432' (36ms).
+dbug: 20.07.2024 15:22:28.238 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.7 initialized 'TrainingContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+dbug: 20.07.2024 15:22:28.285 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<User>()'
+dbug: 20.07.2024 15:22:28.921 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<User>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Age (int) Required ValueGenerated.OnAdd, 1], [Property: User.FirstName (string), 2], [Property: User.LastName (string), 3], [Property: User.Name (string), 4] }
+              SELECT u.ID, u.Age, u.FirstName, u.LastName, u.Name
+              FROM User AS u), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+          ConsoleApp1.TrainingContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 20.07.2024 15:22:28.987 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 20.07.2024 15:22:29.222 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (232ms).
+dbug: 20.07.2024 15:22:29.224 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:22:29.835 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:22:29.880 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20.07.2024 15:22:29.886 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (6ms).
+dbug: 20.07.2024 15:22:29.888 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (9ms).
+dbug: 20.07.2024 15:22:29.938 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName", u."Name"
+      FROM "User" AS u
+fail: 20.07.2024 15:22:30.148 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (240ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName", u."Name"
+      FROM "User" AS u
+dbug: 20.07.2024 15:22:30.150 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:22:30.156 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (4ms).
+fail: 20.07.2024 15:22:30.590 CoreEventId.QueryIterationFailed[10100] (Microsoft.EntityFrameworkCore.Query) 
+      An exception occurred while iterating over the results of a query for context type 'ConsoleApp1.TrainingContext'.
+      Npgsql.PostgresException (0x80004005): 42703: столбец u.FirstName не су�dbug: 20.07.2024 15:23:57.436 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.7 initialized 'TrainingContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+dbug: 20.07.2024 15:23:57.457 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<User>()'
+dbug: 20.07.2024 15:23:57.893 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<User>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Age (int) Required ValueGenerated.OnAdd, 1], [Property: User.FirstName (string), 2], [Property: User.LastName (string), 3], [Property: User.Name (string), 4] }
+              SELECT u.ID, u.Age, u.FirstName, u.LastName, u.Name
+              FROM User AS u), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+          ConsoleApp1.TrainingContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 20.07.2024 15:23:57.989 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 20.07.2024 15:23:58.212 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (231ms).
+dbug: 20.07.2024 15:23:58.216 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:23:58.443 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:23:58.452 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20.07.2024 15:23:58.457 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (5ms).
+dbug: 20.07.2024 15:23:58.458 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (8ms).
+dbug: 20.07.2024 15:23:58.462 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName", u."Name"
+      FROM "User" AS u
+info: 20.07.2024 15:23:58.538 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (74ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName", u."Name"
+      FROM "User" AS u
+dbug: 20.07.2024 15:23:58.779 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 15:23:58.799 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 15:23:58.799 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 15:23:58.799 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 15:23:58.799 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 15:23:58.818 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:23:58.825 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 283ms reading results.
+dbug: 20.07.2024 15:23:58.853 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:23:58.857 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (3ms).
+dbug: 20.07.2024 15:23:58.906 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'TrainingContext' disposed.
+dbug: 20.07.2024 15:23:58.908 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:23:58.909 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database 'Training' on server 'tcp://localhost:5432' (0ms).
+dbug: 20.07.2024 15:29:14.321 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.7 initialized 'TrainingContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+dbug: 20.07.2024 15:29:14.346 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<User>()'
+dbug: 20.07.2024 15:29:14.514 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<User>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Age (int) Required ValueGenerated.OnAdd, 1], [Property: User.FirstName (string), 2], [Property: User.LastName (string), 3], [Property: User.Name (string) BeforeSave:Ignore AfterSave:Ignore ValueGenerated.OnAddOrUpdate, 4] }
+              SELECT u.ID, u.Age, u.FirstName, u.LastName, u.Name
+              FROM User AS u), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+          ConsoleApp1.TrainingContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 20.07.2024 15:29:14.552 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 20.07.2024 15:29:14.603 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (51ms).
+dbug: 20.07.2024 15:29:14.606 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:29:14.817 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:29:14.827 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20.07.2024 15:29:14.832 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (5ms).
+dbug: 20.07.2024 15:29:14.834 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (8ms).
+dbug: 20.07.2024 15:29:14.839 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName", u."Name"
+      FROM "User" AS u
+info: 20.07.2024 15:29:14.866 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName", u."Name"
+      FROM "User" AS u
+dbug: 20.07.2024 15:29:14.870 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:29:14.876 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 6ms reading results.
+dbug: 20.07.2024 15:29:14.878 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:29:14.882 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (3ms).
+dbug: 20.07.2024 15:29:14.890 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'TrainingContext' disposed.
+dbug: 20.07.2024 15:29:14.893 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:29:14.894 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database 'Training' on server 'tcp://localhost:5432' (0ms).
+dbug: 20.07.2024 15:33:14.761 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.7 initialized 'TrainingContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+dbug: 20.07.2024 15:33:14.907 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'TrainingContext' generated a temporary value for the property 'User.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 15:33:15.007 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 15:33:15.011 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'TrainingContext'.
+dbug: 20.07.2024 15:33:15.020 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'TrainingContext'.
+dbug: 20.07.2024 15:33:15.036 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'TrainingContext'.
+dbug: 20.07.2024 15:33:15.135 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 20.07.2024 15:33:15.202 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (66ms).
+dbug: 20.07.2024 15:33:15.204 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:33:15.399 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:33:15.403 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20.07.2024 15:33:15.407 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 20.07.2024 15:33:15.425 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (22ms).
+dbug: 20.07.2024 15:33:15.430 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2)
+      RETURNING "ID", "Name";
+info: 20.07.2024 15:33:15.568 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (135ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2)
+      RETURNING "ID", "Name";
+dbug: 20.07.2024 15:33:15.582 CoreEventId.ForeignKeyChangeDetected[10803] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The foreign key property 'User.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 20.07.2024 15:33:15.588 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:33:15.593 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 22ms reading results.
+dbug: 20.07.2024 15:33:15.595 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:33:15.599 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (3ms).
+dbug: 20.07.2024 15:33:15.605 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'User' tracked by 'TrainingContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 15:33:15.606 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'TrainingContext' with 1 entities written to the database.
+dbug: 20.07.2024 15:33:15.620 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<User>()'
+dbug: 20.07.2024 15:33:15.835 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<User>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Age (int) Required ValueGenerated.OnAdd, 1], [Property: User.FirstName (string), 2], [Property: User.LastName (string), 3], [Property: User.Name (string) BeforeSave:Ignore AfterSave:Ignore ValueGenerated.OnAddOrUpdate, 4] }
+              SELECT u.ID, u.Age, u.FirstName, u.LastName, u.Name
+              FROM User AS u), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+          ConsoleApp1.TrainingContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 20.07.2024 15:33:15.861 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:33:15.862 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:33:15.862 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20.07.2024 15:33:15.862 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 20.07.2024 15:33:15.862 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 20.07.2024 15:33:15.862 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName", u."Name"
+      FROM "User" AS u
+info: 20.07.2024 15:33:15.865 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName", u."Name"
+      FROM "User" AS u
+dbug: 20.07.2024 15:33:15.868 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:33:15.869 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 4ms reading results.
+dbug: 20.07.2024 15:33:15.869 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:33:15.869 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (0ms).
+dbug: 20.07.2024 15:33:15.873 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'TrainingContext' disposed.
+dbug: 20.07.2024 15:33:15.876 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:33:15.878 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database 'Training' on server 'tcp://localhost:5432' (1ms).
+dbug: 20.07.2024 15:36:38.338 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.7 initialized 'TrainingContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+dbug: 20.07.2024 15:36:38.384 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'TrainingContext' generated a temporary value for the property 'User.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 15:36:38.434 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 15:36:38.441 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'TrainingContext'.
+dbug: 20.07.2024 15:36:38.444 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'TrainingContext'.
+dbug: 20.07.2024 15:36:38.455 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'TrainingContext'.
+dbug: 20.07.2024 15:36:38.581 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 20.07.2024 15:36:38.720 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (138ms).
+dbug: 20.07.2024 15:36:38.727 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:36:39.057 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:36:39.064 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20.07.2024 15:36:39.072 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (5ms).
+dbug: 20.07.2024 15:36:39.077 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (14ms).
+dbug: 20.07.2024 15:36:39.085 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2)
+      RETURNING "ID", "Name";
+info: 20.07.2024 15:36:39.175 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (92ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2)
+      RETURNING "ID", "Name";
+dbug: 20.07.2024 15:36:39.189 CoreEventId.ForeignKeyChangeDetected[10803] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The foreign key property 'User.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 20.07.2024 15:36:39.195 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:36:39.202 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 23ms reading results.
+dbug: 20.07.2024 15:36:39.204 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:36:39.208 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (3ms).
+dbug: 20.07.2024 15:36:39.216 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'User' tracked by 'TrainingContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 15:36:39.217 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'TrainingContext' with 1 entities written to the database.
+dbug: 20.07.2024 15:36:39.248 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<User>()'
+dbug: 20.07.2024 15:36:39.410 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<User>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Age (int) Required ValueGenerated.OnAdd, 1], [Property: User.FirstName (string), 2], [Property: User.LastName (string), 3], [Property: User.Name (string) BeforeSave:Ignore AfterSave:Ignore ValueGenerated.OnAddOrUpdate, 4] }
+              SELECT u.ID, u.Age, u.FirstName, u.LastName, u.Name
+              FROM User AS u), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+          ConsoleApp1.TrainingContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 20.07.2024 15:36:39.427 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:36:39.427 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:36:39.427 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20.07.2024 15:36:39.427 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 20.07.2024 15:36:39.427 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 20.07.2024 15:36:39.427 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName", u."Name"
+      FROM "User" AS u
+info: 20.07.2024 15:36:39.429 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName", u."Name"
+      FROM "User" AS u
+dbug: 20.07.2024 15:36:39.434 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 15:36:39.435 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:36:39.435 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 6ms reading results.
+dbug: 20.07.2024 15:36:39.435 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:36:39.435 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (0ms).
+dbug: 20.07.2024 15:36:39.438 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'TrainingContext' disposed.
+dbug: 20.07.2024 15:36:39.440 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:36:39.441 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database 'Training' on server 'tcp://localhost:5432' (0ms).
+dbug: 20.07.2024 15:37:00.729 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.7 initialized 'TrainingContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+dbug: 20.07.2024 15:37:00.760 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'TrainingContext' generated a temporary value for the property 'User.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 15:37:00.806 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 15:37:00.810 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'TrainingContext'.
+dbug: 20.07.2024 15:37:00.812 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'TrainingContext'.
+dbug: 20.07.2024 15:37:00.820 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'TrainingContext'.
+dbug: 20.07.2024 15:37:00.881 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 20.07.2024 15:37:00.940 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (58ms).
+dbug: 20.07.2024 15:37:00.942 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:37:01.143 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:37:01.149 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20.07.2024 15:37:01.156 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (4ms).
+dbug: 20.07.2024 15:37:01.162 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (13ms).
+dbug: 20.07.2024 15:37:01.171 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2)
+      RETURNING "ID", "Name";
+info: 20.07.2024 15:37:01.242 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (74ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2)
+      RETURNING "ID", "Name";
+dbug: 20.07.2024 15:37:01.256 CoreEventId.ForeignKeyChangeDetected[10803] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The foreign key property 'User.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 20.07.2024 15:37:01.266 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:37:01.275 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 26ms reading results.
+dbug: 20.07.2024 15:37:01.280 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:37:01.286 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (7ms).
+dbug: 20.07.2024 15:37:01.296 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'User' tracked by 'TrainingContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 15:37:01.297 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'TrainingContext' with 1 entities written to the database.
+dbug: 20.07.2024 15:37:01.314 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<User>()'
+dbug: 20.07.2024 15:37:01.461 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<User>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Age (int) Required ValueGenerated.OnAdd, 1], [Property: User.FirstName (string), 2], [Property: User.LastName (string), 3], [Property: User.Name (string) BeforeSave:Ignore AfterSave:Ignore ValueGenerated.OnAddOrUpdate, 4] }
+              SELECT u.ID, u.Age, u.FirstName, u.LastName, u.Name
+              FROM User AS u), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+          ConsoleApp1.TrainingContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 20.07.2024 15:37:01.482 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:37:01.483 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:37:01.483 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20.07.2024 15:37:01.483 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 20.07.2024 15:37:01.483 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 20.07.2024 15:37:01.483 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName", u."Name"
+      FROM "User" AS u
+info: 20.07.2024 15:37:01.485 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName", u."Name"
+      FROM "User" AS u
+dbug: 20.07.2024 15:37:01.490 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 15:37:01.490 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20.07.2024 15:37:01.491 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:37:01.493 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 7ms reading results.
+dbug: 20.07.2024 15:37:01.493 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:37:01.493 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (0ms).
+dbug: 20.07.2024 15:37:46.730 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'TrainingContext' disposed.
+dbug: 20.07.2024 15:37:46.733 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 20.07.2024 15:37:46.734 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database 'Training' on server 'tcp://localhost:5432' (1ms).
+dbug: 22.07.2024 00:00:51.016 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.7 initialized 'TrainingContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+dbug: 22.07.2024 00:00:51.109 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'TrainingContext' generated a temporary value for the property 'User.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 00:00:51.285 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 00:00:51.288 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 00:00:51.290 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 00:00:51.300 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'TrainingContext'.
+dbug: 22.07.2024 00:00:51.481 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 22.07.2024 00:00:53.639 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (2125ms).
+dbug: 22.07.2024 00:00:53.641 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 00:00:55.819 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 00:00:55.823 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 22.07.2024 00:00:55.900 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (74ms).
+dbug: 22.07.2024 00:00:55.911 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (88ms).
+dbug: 22.07.2024 00:00:55.920 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName", "Name")
+      VALUES (@p0, @p1, @p2, @p3)
+      RETURNING "ID";
+fail: 22.07.2024 00:00:56.973 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (955ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName", "Name")
+      VALUES (@p0, @p1, @p2, @p3)
+      RETURNING "ID";
+dbug: 22.07.2024 00:00:57.040 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 00:00:57.047 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (4ms).
+fail: 22.07.2024 00:00:57.627 CoreEventId.SaveChangesFailed[10000] (Microsoft.EntityFrameworkCore.Update) 
+      An exception occurred in the database while saving changes for context type 'ConsoleApp1.TrainingContext'.
+      Microsoft.EntityFrameworkCore.DbUpdateExcdbug: 22.07.2024 00:03:35.931 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.7 initialized 'TrainingContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+dbug: 22.07.2024 00:03:35.972 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'TrainingContext' generated a temporary value for the property 'User.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 00:03:36.021 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 00:03:40.143 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 00:03:40.145 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 00:03:40.153 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'TrainingContext'.
+dbug: 22.07.2024 00:03:40.214 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 22.07.2024 00:03:40.347 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (134ms).
+dbug: 22.07.2024 00:03:40.350 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 00:03:40.633 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 00:03:40.637 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 22.07.2024 00:03:40.642 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 22.07.2024 00:03:40.647 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (10ms).
+dbug: 22.07.2024 00:03:40.653 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName", "Name")
+      VALUES (@p0, @p1, @p2, @p3)
+      RETURNING "ID";
+fail: 22.07.2024 00:03:40.749 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (96ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName", "Name")
+      VALUES (@p0, @p1, @p2, @p3)
+      RETURNING "ID";
+dbug: 22.07.2024 00:03:40.753 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 00:03:40.758 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (3ms).
+fail: 22.07.2024 00:03:40.859 CoreEventId.SaveChangesFailed[10000] (Microsoft.EntityFrameworkCore.Update) 
+      An exception occurred in the database while saving changes for context type 'ConsoleApp1.TrainingContext'.
+      Microsoft.EntityFrameworkCore.DbUpdateExceptdbug: 22.07.2024 00:04:48.363 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.7 initialized 'TrainingContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+dbug: 22.07.2024 00:04:48.402 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'TrainingContext' generated a temporary value for the property 'User.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 00:04:48.449 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 00:04:51.018 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 00:04:51.020 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 00:04:51.028 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'TrainingContext'.
+dbug: 22.07.2024 00:04:51.094 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 22.07.2024 00:04:51.160 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (66ms).
+dbug: 22.07.2024 00:04:51.163 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 00:04:51.446 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 00:04:51.453 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 22.07.2024 00:04:51.461 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (5ms).
+dbug: 22.07.2024 00:04:51.468 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (16ms).
+dbug: 22.07.2024 00:04:51.477 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName", "Name")
+      VALUES (@p0, @p1, @p2, @p3)
+      RETURNING "ID";
+fail: 22.07.2024 00:04:51.551 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (77ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName", "Name")
+      VALUES (@p0, @p1, @p2, @p3)
+      RETURNING "ID";
+dbug: 22.07.2024 00:04:51.555 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 00:04:51.560 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (3ms).
+fail: 22.07.2024 00:04:51.595 CoreEventId.SaveChangesFailed[10000] (Microsoft.EntityFrameworkCore.Update) 
+      An exception occurred in the database while saving changes for context type 'ConsoleApp1.TrainingContext'.
+      Microsoft.EntityFrameworkCore.DbUpdateExceptidbug: 22.07.2024 00:10:04.175 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.7 initialized 'TrainingContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+dbug: 22.07.2024 00:10:04.224 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'TrainingContext' generated a temporary value for the property 'User.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 00:10:04.285 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 00:10:05.821 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 00:10:05.823 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 00:10:05.835 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'TrainingContext'.
+dbug: 22.07.2024 00:10:05.886 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 22.07.2024 00:10:05.941 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (52ms).
+dbug: 22.07.2024 00:10:05.945 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 00:10:06.169 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 00:10:06.173 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 22.07.2024 00:10:06.179 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 22.07.2024 00:10:06.183 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (10ms).
+dbug: 22.07.2024 00:10:06.189 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2)
+      RETURNING "ID";
+info: 22.07.2024 00:10:06.402 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (211ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2)
+      RETURNING "ID";
+dbug: 22.07.2024 00:10:06.445 CoreEventId.ForeignKeyChangeDetected[10803] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The foreign key property 'User.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 22.07.2024 00:10:06.473 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 00:10:06.479 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 73ms reading results.
+dbug: 22.07.2024 00:10:06.482 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 00:10:06.487 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (5ms).
+dbug: 22.07.2024 00:10:06.494 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'User' tracked by 'TrainingContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 00:10:06.495 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'TrainingContext' with 1 entities written to the database.
+dbug: 22.07.2024 00:10:08.066 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<User>()'
+dbug: 22.07.2024 00:10:08.932 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<User>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Age (int) Required ValueGenerated.OnAdd, 1], [Property: User.FirstName (string), 2], [Property: User.LastName (string), 3] }
+              SELECT u.ID, u.Age, u.FirstName, u.LastName
+              FROM User AS u), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+          ConsoleApp1.TrainingContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 22.07.2024 00:10:08.975 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 00:10:08.975 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 00:10:08.975 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 22.07.2024 00:10:08.975 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 22.07.2024 00:10:08.975 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 22.07.2024 00:10:08.975 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName"
+      FROM "User" AS u
+info: 22.07.2024 00:10:08.996 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName"
+      FROM "User" AS u
+dbug: 22.07.2024 00:10:09.040 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 00:10:09.041 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 00:10:09.041 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 00:10:09.041 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 00:10:09.043 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 46ms reading results.
+dbug: 22.07.2024 00:10:09.043 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 00:10:09.043 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (0ms).
+dbug: 22.07.2024 00:10:18.016 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'TrainingContext' disposed.
+dbug: 22.07.2024 00:10:18.018 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 00:10:18.019 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database 'Training' on server 'tcp://localhost:5432' (1ms).
+dbug: 22.07.2024 01:28:42.114 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.7 initialized 'TrainingContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+dbug: 22.07.2024 01:28:42.482 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 01:28:42.486 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 01:28:42.487 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 01:28:42.496 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'TrainingContext'.
+dbug: 22.07.2024 01:28:42.653 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 22.07.2024 01:28:43.204 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (592ms).
+dbug: 22.07.2024 01:28:43.210 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 01:28:44.343 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 01:28:44.347 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 22.07.2024 01:28:44.398 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (48ms).
+dbug: 22.07.2024 01:28:44.438 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (91ms).
+dbug: 22.07.2024 01:28:44.492 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("ID", "Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2, @p3);
+info: 22.07.2024 01:28:44.872 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (410ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("ID", "Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2, @p3);
+dbug: 22.07.2024 01:28:44.877 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 01:28:44.882 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 6ms reading results.
+dbug: 22.07.2024 01:28:44.885 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 01:28:44.888 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (3ms).
+dbug: 22.07.2024 01:28:44.893 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'User' tracked by 'TrainingContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 01:28:44.894 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'TrainingContext' with 1 entities written to the database.
+dbug: 22.07.2024 01:28:45.010 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<User>()'
+dbug: 22.07.2024 01:28:45.726 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<User>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Age (int) Required ValueGenerated.OnAdd, 1], [Property: User.FirstName (string), 2], [Property: User.LastName (string), 3] }
+              SELECT u.ID, u.Age, u.FirstName, u.LastName
+              FROM User AS u), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+          ConsoleApp1.TrainingContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 22.07.2024 01:28:45.807 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 01:28:45.807 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 01:28:45.807 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 22.07.2024 01:28:45.807 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 22.07.2024 01:28:45.807 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 22.07.2024 01:28:45.807 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName"
+      FROM "User" AS u
+info: 22.07.2024 01:28:45.839 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName"
+      FROM "User" AS u
+dbug: 22.07.2024 01:28:45.874 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 01:28:45.874 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 01:28:45.874 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 01:28:45.874 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 01:28:45.875 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 01:28:45.876 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 37ms reading results.
+dbug: 22.07.2024 01:28:45.876 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 01:28:45.876 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (0ms).
+dbug: 22.07.2024 01:28:45.898 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'TrainingContext' disposed.
+dbug: 22.07.2024 01:28:45.900 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 01:28:45.901 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database 'Training' on server 'tcp://localhost:5432' (0ms).
+dbug: 22.07.2024 03:08:13.546 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.7 initialized 'TrainingContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+dbug: 22.07.2024 03:08:13.720 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:08:13.723 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 03:08:13.731 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 03:08:13.740 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'TrainingContext'.
+dbug: 22.07.2024 03:08:14.200 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 22.07.2024 03:08:14.624 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (372ms).
+dbug: 22.07.2024 03:08:14.653 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:08:15.910 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:08:15.918 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 22.07.2024 03:08:15.973 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (55ms).
+dbug: 22.07.2024 03:08:15.996 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (80ms).
+dbug: 22.07.2024 03:08:16.032 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("ID", "Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2, @p3);
+info: 22.07.2024 03:08:16.214 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (184ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("ID", "Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2, @p3);
+dbug: 22.07.2024 03:08:16.218 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:08:16.223 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 6ms reading results.
+dbug: 22.07.2024 03:08:16.225 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:08:16.229 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (3ms).
+dbug: 22.07.2024 03:08:16.233 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'User' tracked by 'TrainingContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:08:16.234 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'TrainingContext' with 1 entities written to the database.
+dbug: 22.07.2024 03:08:16.307 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<User>()'
+dbug: 22.07.2024 03:08:16.777 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<User>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Age (int) Required ValueGenerated.OnAdd, 1], [Property: User.FirstName (string), 2], [Property: User.LastName (string), 3] }
+              SELECT u.ID, u.Age, u.FirstName, u.LastName
+              FROM User AS u), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+          ConsoleApp1.TrainingContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 22.07.2024 03:08:16.836 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:08:16.837 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:08:16.837 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 22.07.2024 03:08:16.837 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 22.07.2024 03:08:16.837 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 22.07.2024 03:08:16.838 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName"
+      FROM "User" AS u
+info: 22.07.2024 03:08:16.861 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName"
+      FROM "User" AS u
+dbug: 22.07.2024 03:08:16.882 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:08:16.883 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:08:16.885 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 23ms reading results.
+dbug: 22.07.2024 03:08:16.885 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:08:16.885 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (0ms).
+dbug: 22.07.2024 03:08:16.900 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'TrainingContext' disposed.
+dbug: 22.07.2024 03:08:16.902 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:08:16.903 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database 'Training' on server 'tcp://localhost:5432' (0ms).
+dbug: 22.07.2024 03:12:32.677 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.7 initialized 'TrainingContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+dbug: 22.07.2024 03:12:32.858 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:12:32.862 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 03:12:32.864 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 03:12:32.872 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'TrainingContext'.
+dbug: 22.07.2024 03:12:33.128 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 22.07.2024 03:12:33.357 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (249ms).
+dbug: 22.07.2024 03:12:33.359 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:12:34.242 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:12:34.247 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 22.07.2024 03:12:34.254 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (4ms).
+dbug: 22.07.2024 03:12:34.273 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (26ms).
+dbug: 22.07.2024 03:12:34.278 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("ID", "Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2, @p3);
+fail: 22.07.2024 03:12:34.516 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (238ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("ID", "Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2, @p3);
+dbug: 22.07.2024 03:12:34.521 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:12:34.526 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (3ms).
+fail: 22.07.2024 03:12:35.598 CoreEventId.SaveChangesFailed[10000] (Microsoft.EntityFrameworkCore.Update) 
+      An exception occurred in the database while saving changes for context type 'ConsoleApp1.TrainingContext'.
+      Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+       ---> Npgsql.PostgresException (0x80004005): 23505: повторяющееся значение ключа нарушает ограничение уникальности "User_pkey"
+      
+ dbug: 22.07.2024 03:14:14.307 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.7 initialized 'TrainingContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+dbug: 22.07.2024 03:14:14.388 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'TrainingContext' generated a temporary value for the property 'User.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:14:14.470 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:14:14.474 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 03:14:14.476 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 03:14:14.483 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'TrainingContext'.
+dbug: 22.07.2024 03:14:14.574 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 22.07.2024 03:14:14.685 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (109ms).
+dbug: 22.07.2024 03:14:14.695 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:14:15.050 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:14:15.054 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 22.07.2024 03:14:15.059 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 22.07.2024 03:14:15.063 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (9ms).
+dbug: 22.07.2024 03:14:15.070 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2)
+      RETURNING "ID";
+info: 22.07.2024 03:14:15.245 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (176ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2)
+      RETURNING "ID";
+dbug: 22.07.2024 03:14:15.273 CoreEventId.ForeignKeyChangeDetected[10803] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The foreign key property 'User.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 22.07.2024 03:14:15.293 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:14:15.301 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 52ms reading results.
+dbug: 22.07.2024 03:14:15.304 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:14:15.310 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (4ms).
+dbug: 22.07.2024 03:14:15.323 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'User' tracked by 'TrainingContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:14:15.324 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'TrainingContext' with 1 entities written to the database.
+dbug: 22.07.2024 03:14:15.569 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<User>()'
+dbug: 22.07.2024 03:14:15.935 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<User>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Age (int) Required ValueGenerated.OnAdd, 1], [Property: User.FirstName (string), 2], [Property: User.LastName (string), 3] }
+              SELECT u.ID, u.Age, u.FirstName, u.LastName
+              FROM User AS u), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+          ConsoleApp1.TrainingContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 22.07.2024 03:14:15.951 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:14:15.952 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:14:15.952 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 22.07.2024 03:14:15.952 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 22.07.2024 03:14:15.952 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 22.07.2024 03:14:15.952 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName"
+      FROM "User" AS u
+info: 22.07.2024 03:14:15.967 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName"
+      FROM "User" AS u
+dbug: 22.07.2024 03:14:15.983 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:14:15.983 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:14:15.983 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:14:15.984 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 16ms reading results.
+dbug: 22.07.2024 03:14:15.984 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:14:15.984 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (0ms).
+dbug: 22.07.2024 03:14:16.012 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 03:14:16.012 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 03:14:16.012 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'TrainingContext'.
+dbug: 22.07.2024 03:14:16.012 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'TrainingContext' with 0 entities written to the database.
+dbug: 22.07.2024 03:14:16.013 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'TrainingContext' disposed.
+dbug: 22.07.2024 03:14:16.015 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:14:16.016 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database 'Training' on server 'tcp://localhost:5432' (0ms).
+dbug: 22.07.2024 03:15:22.716 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.7 initialized 'TrainingContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+dbug: 22.07.2024 03:15:22.811 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'TrainingContext' generated a temporary value for the property 'User.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:15:22.955 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:15:22.977 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<User>()'
+dbug: 22.07.2024 03:15:23.180 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<User>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Age (int) Required ValueGenerated.OnAdd, 1], [Property: User.FirstName (string), 2], [Property: User.LastName (string), 3] }
+              SELECT u.ID, u.Age, u.FirstName, u.LastName
+              FROM User AS u), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+          ConsoleApp1.TrainingContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 22.07.2024 03:15:23.206 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 22.07.2024 03:15:23.268 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (58ms).
+dbug: 22.07.2024 03:15:23.273 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:15:23.477 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:15:23.491 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 22.07.2024 03:15:23.496 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (6ms).
+dbug: 22.07.2024 03:15:23.498 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (9ms).
+dbug: 22.07.2024 03:15:23.509 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName"
+      FROM "User" AS u
+info: 22.07.2024 03:15:23.536 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName"
+      FROM "User" AS u
+dbug: 22.07.2024 03:15:23.581 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:15:23.582 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:15:23.582 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:15:23.584 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:15:23.591 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 51ms reading results.
+dbug: 22.07.2024 03:15:23.594 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:15:23.599 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (5ms).
+dbug: 22.07.2024 03:15:23.603 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 03:15:23.604 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 03:15:23.653 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'TrainingContext'.
+dbug: 22.07.2024 03:15:23.703 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:15:23.704 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:15:23.705 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 22.07.2024 03:15:23.705 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 22.07.2024 03:15:23.708 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (3ms).
+dbug: 22.07.2024 03:15:23.710 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2)
+      RETURNING "ID";
+info: 22.07.2024 03:15:23.721 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2)
+      RETURNING "ID";
+dbug: 22.07.2024 03:15:23.728 CoreEventId.ForeignKeyChangeDetected[10803] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The foreign key property 'User.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 22.07.2024 03:15:23.734 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:15:23.734 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 13ms reading results.
+dbug: 22.07.2024 03:15:23.735 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:15:23.735 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (0ms).
+dbug: 22.07.2024 03:15:23.741 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'User' tracked by 'TrainingContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:15:23.742 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'TrainingContext' with 1 entities written to the database.
+dbug: 22.07.2024 03:15:23.743 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'TrainingContext' disposed.
+dbug: 22.07.2024 03:15:23.745 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:15:23.746 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database 'Training' on server 'tcp://localhost:5432' (0ms).
+dbug: 22.07.2024 03:17:05.631 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.7 initialized 'TrainingContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+dbug: 22.07.2024 03:17:05.678 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'TrainingContext' generated a temporary value for the property 'User.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:17:05.788 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:17:05.793 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 03:17:05.794 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'TrainingContext'.
+dbug: 22.07.2024 03:17:05.804 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'TrainingContext'.
+dbug: 22.07.2024 03:17:05.855 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 22.07.2024 03:17:05.916 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (59ms).
+dbug: 22.07.2024 03:17:05.918 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:17:06.146 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:17:06.150 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 22.07.2024 03:17:06.155 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 22.07.2024 03:17:06.159 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (9ms).
+dbug: 22.07.2024 03:17:06.165 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2)
+      RETURNING "ID";
+info: 22.07.2024 03:17:06.243 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (78ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "User" ("Age", "FirstName", "LastName")
+      VALUES (@p0, @p1, @p2)
+      RETURNING "ID";
+dbug: 22.07.2024 03:17:06.257 CoreEventId.ForeignKeyChangeDetected[10803] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The foreign key property 'User.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 22.07.2024 03:17:06.263 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:17:06.269 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 23ms reading results.
+dbug: 22.07.2024 03:17:06.271 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:17:06.275 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (3ms).
+dbug: 22.07.2024 03:17:06.282 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'User' tracked by 'TrainingContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:17:06.284 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'TrainingContext' with 1 entities written to the database.
+dbug: 22.07.2024 03:17:06.306 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<User>()'
+dbug: 22.07.2024 03:17:06.463 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<User>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Age (int) Required ValueGenerated.OnAdd, 1], [Property: User.FirstName (string), 2], [Property: User.LastName (string), 3] }
+              SELECT u.ID, u.Age, u.FirstName, u.LastName
+              FROM User AS u), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+          ConsoleApp1.TrainingContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 22.07.2024 03:17:06.479 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:17:06.479 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:17:06.479 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 22.07.2024 03:17:06.479 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 22.07.2024 03:17:06.479 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 22.07.2024 03:17:06.479 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName"
+      FROM "User" AS u
+info: 22.07.2024 03:17:06.481 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT u."ID", u."Age", u."FirstName", u."LastName"
+      FROM "User" AS u
+dbug: 22.07.2024 03:17:06.486 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:17:06.487 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:17:06.487 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:17:06.487 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'TrainingContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 22.07.2024 03:17:06.487 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:17:06.488 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'Training' on server 'tcp://localhost:5432' is being disposed after spending 7ms reading results.
+dbug: 22.07.2024 03:17:06.488 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:17:06.488 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'Training' on server 'tcp://localhost:5432' (0ms).
+dbug: 22.07.2024 03:17:06.490 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'TrainingContext' disposed.
+dbug: 22.07.2024 03:17:06.491 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'Training' on server 'tcp://localhost:5432'.
+dbug: 22.07.2024 03:17:06.492 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database 'Training' on server 'tcp://localhost:5432' (0ms).
